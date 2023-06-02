@@ -11,6 +11,7 @@ function App() {
 
   useEffect(() => {
     tg.ready()
+    document.getElementById('test').innerText = location.href
   }, [])
 
   return (
@@ -20,7 +21,7 @@ function App() {
         <Route index element={<ProductList />} />
         <Route path="/form" element={<Form />} />
       </Routes>
-      <p>testing</p>
+      <p id="test">testing</p>
     </div>
   )
 }
