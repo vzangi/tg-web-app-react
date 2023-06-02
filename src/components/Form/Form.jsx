@@ -35,6 +35,24 @@ const Form = () => {
   return (
     <div className={'form'}>
       <h3>Введите ваши данные</h3>
+      <input
+        onChange={onChangeCountry}
+        className={'input'}
+        type="text"
+        value={country}
+        placeholder={'Страна'}
+      />
+      <input
+        onChange={onChangeStreet}
+        className={'input'}
+        type="text"
+        value={street}
+        placeholder={'Улица'}
+      />
+      <select value={subject} onChange={onChangeSubject} className={'select'}>
+        <option value={'physical'}>Физ. лицо</option>
+        <option value={'legal'}>Юр. лицо</option>
+      </select>
     </div>
   )
 }
