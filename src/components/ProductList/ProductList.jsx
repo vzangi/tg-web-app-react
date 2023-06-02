@@ -2,11 +2,7 @@ import React from 'react'
 import './ProductList.css'
 
 const ProductList = () => {
-  return (
-    <div>
-      <a href="/form">Form</a>
-    </div>
-  )
+  return <div>Products</div>
 }
 
 export default ProductList
